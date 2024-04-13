@@ -1,0 +1,81 @@
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+p {
+	opacity: 0;
+	/* transition: .05s; */
+	color:black;
+	position: absolute;
+	top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highlighted {
+	opacity: 1;
+}
+
+
+/* layout */
+
+body {
+	height: 100vh;
+	margin: 0 auto;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	font-family: "brenner sans";
+}
+
+.container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlighted {
+    /* Add your styles for highlighted captions */
+    background-color: yellow;
+    font-weight: bold;
+	font-family: "brenner sans";
+}
+
+/* Overriding the stair effect styling when it's active without removing the class */
+#closed-captions .stair-effect {
+    background-color: transparent; /* Override the background color set by 'highlighted' */
+    color: blue; /* Add your specific styling for the stair effect */
+}
+
+video {
+	width: 750px; 
+	height: 100%;
+	margin: 0 auto;
+}
+ 
+
+#line-9.stair-effect, #line-10.stair-effect, #line-11.stair-effect {
+	font-size: 2.1em;
+    opacity: 1;
+	position: absolute;
+}
+
+#line-9.stair-effect {
+    top: 6em;
+    left: 7em;
+}
+
+#line-10.stair-effect {
+    top: 7em;
+    left: 7.5em;
+}
+
+#line-11.stair-effect {
+    top: 8em;
+    left: 8.5em;
+}
+
