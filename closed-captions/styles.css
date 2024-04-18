@@ -1,18 +1,18 @@
-/* **********************************************
-Basic mechanics
-Hide all paragraphs by default
-Show them when they receive the class 'on'
-Hide them when they receive the class 'off'
-Feel free to adjust the defaults to your needs.
-********************************************** */
+
+/* Noto Sans variable */
+/* Urbanist variable */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 p {
 	opacity: 0;
-	/* transition: .05s; */
 	color:black;
 	position: absolute;
 	top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 .highlighted {
@@ -22,6 +22,10 @@ p {
 
 /* layout */
 
+html {
+	background-color: rgb(255, 180, 220);
+}
+
 body {
 	height: 100vh;
 	margin: 0 auto;
@@ -30,7 +34,7 @@ body {
 h1 {
 	display: flex;
 	justify-content: center;
-	font-family: "brenner sans";
+	font-family: "Noto Serif Display", serif;
 }
 
 .container {
@@ -38,17 +42,19 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 .highlighted {
-    /* Add your styles for highlighted captions */
-    background-color: yellow;
+    /* background-color: yellow; */
     font-weight: bold;
-	font-family: "brenner sans";
+	font-family: "Urbanist", sans-serif;
+	transition: opacity 0.2s ease-in-out;
 }
 
 /* Overriding the stair effect styling when it's active without removing the class */
 #closed-captions .stair-effect {
-    background-color: transparent; /* Override the background color set by 'highlighted' */
-    color: blue; /* Add your specific styling for the stair effect */
+	/* override highlight styling */
+    background-color: transparent; 
+    color: rgb(165, 4, 117); 
 }
 
 video {
@@ -56,26 +62,171 @@ video {
 	height: 100%;
 	margin: 0 auto;
 }
- 
 
-#line-9.stair-effect, #line-10.stair-effect, #line-11.stair-effect {
+#closed-captions .serious-effect {
+	color: rgb(114, 0, 166); 
+}
+
+
+/* Oh, she's royal styling (line 9, 10 and 11) */
+
+#line-10.stair-effect, #line-11.stair-effect, #line-12.stair-effect,
+#line-19.serious-effect, #line-20.serious-effect {
+	font-family: "Noto Serif Display", serif;
+	text-shadow: rgb(255, 255, 255) 3px 0 1px;
 	font-size: 2.1em;
     opacity: 1;
 	position: absolute;
 }
 
-#line-9.stair-effect {
-    top: 6em;
-    left: 7em;
+#line-19.serious-effect, #line-20.serious-effect {
+	animation-name: zoom-out;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
 }
 
 #line-10.stair-effect {
-    top: 7em;
-    left: 7.5em;
+    top: 6em;
+    left: 15em;
 }
 
 #line-11.stair-effect {
-    top: 8em;
-    left: 8.5em;
+    top: 7em;
+    left: 15.5em;
 }
 
+#line-12.stair-effect {
+    top: 8em;
+    left: 16.5em;
+}
+
+
+#line-19.serious-effect {
+	top: 6em;
+    left: 15em;
+}
+
+#line-20.serious-effect {
+	top: 7em;
+    left: 16em;
+}
+
+
+/* ------------------------------ */
+/* GIF STYLING FOR VISUAL EFFECTS */
+/* ------------------------------ */
+
+.hidden {
+    display: none;
+}
+
+/* Additional styles for the gifs */
+#pizazz-gif {
+    width: 30%;
+	overflow: hidden;
+}
+
+#surprised-gif {
+	width: 20%;
+	overflow: hidden;
+}
+
+#twirl-gif {
+	width: 20%;
+	overflow: hidden;
+}
+
+
+#pizazz-gif {
+	position: relative;
+	top: -27em;
+	left: 25em;
+}
+
+#surprised-gif {
+	position: relative;
+	top: -24em;
+	left: 32em;
+	transform: rotate(-185deg);
+}
+
+#twirl-gif {
+	position: relative;
+	top: -22em;
+	left: 35.5em;
+}
+
+
+
+/* Music aura */
+
+.plasma-music {
+    animation-name: animateBackground;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes animateBackground {
+    0% {
+        background: linear-gradient(to right, rgb(233, 80, 223), rgb(255, 112, 112));
+    }
+    50% {
+        background: linear-gradient(to right, rgb(255, 112, 112), rgb(78, 240, 184));
+    }
+    100% {
+        background: linear-gradient(to right, rgb(78, 240, 184), rgb(233, 80, 223));
+    }
+}
+
+
+.changed {
+	animation-name: dramatic-change;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+@keyframes dramatic-change {
+    0% {
+        background-color: rgba(128, 0, 128, 0);
+    }
+    100% {
+        background-color: rgba(128, 0, 128, 0.9);
+    }
+}
+
+
+@keyframes zoom-out {
+	0% {
+		font-variation-settings: "wdth" 75;
+		font-style: italic;
+		font-weight: 100;
+	}
+
+	100% {
+		font-variation-settings: "wdth" 100;
+		font-style: italic;
+		font-weight: 700;
+	}
+}
+
+@keyframes vertical-bounce {
+	0% {
+		font-variation-settings: "wdth" 62.5;
+		font-style: italic;
+		font-weight: 100;
+	}
+
+	50% {
+		font-variation-settings: "wdth" 100;
+		font-style: italic;
+		font-weight: 800;
+	}
+
+	100% {
+		font-variation-settings: "wdth" 62.5;
+		font-style: italic;
+		font-weight: 100;
+	}
+}
