@@ -71,4 +71,13 @@ captions[51] = ['109.23','112.41'];
 // [Geneva]: Purpose. We just started, you're trying to kill me!
 captions[52] = ['112.48','116.24'];
 captions[53] = ['116.31','118.05'];
-captions[54] = ['118.12','122.61'];
+// This Mexican puts the 
+captions[54] = ['118.12','119.34'];
+captions[55] = ['119.414','119.814'];
+captions[56] = ['119.886','120.343'];
+// Tex-ASS,
+captions[57] = ['120.414','120.943'];
+captions[58] = ['121.014','122.014'];
+captions[59] = ['122.086','123'];
+captions[60] = ['123','125.4'];
+

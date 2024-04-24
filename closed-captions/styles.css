@@ -1,11 +1,18 @@
-
 /* Noto Sans variable */
 /* Urbanist variable */
+/* Mali */
+/* Satisfy */
+/* Unbounded */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&family=Unbounded:wght@722&display=swap');
+#closed-captions {
+	position: relative;
+	top: 1em;
+}
 
 
 p {
+	font-size: 1.7em;
 	opacity: 0;
 	color:black;
 	position: absolute;
@@ -13,6 +20,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
 	text-align: center;
+	color: rgb(70, 0, 103); 
 }
 
 .highlighted {
@@ -35,6 +43,8 @@ h1 {
 	display: flex;
 	justify-content: center;
 	font-family: "Noto Serif Display", serif;
+	font-weight: 900;
+	color: rgb(70, 0, 103); 
 }
 
 .container {
@@ -54,11 +64,11 @@ h1 {
 #closed-captions .stair-effect {
 	/* override highlight styling */
     background-color: transparent; 
-    color: rgb(165, 4, 117); 
+    color: rgb(104, 14, 0);
 }
 
 video {
-	width: 750px; 
+	width: 73em; 
 	height: 100%;
 	margin: 0 auto;
 }
@@ -68,48 +78,211 @@ video {
 }
 
 
+/* Drag Queen test with different fonts */
+
+.queenPlasma {
+	font-family: "Noto Serif Display", serif;
+	color: rgb(104, 14, 0); 
+}
+.queenPlasmaBold {
+	font-family: "Noto Serif Display", serif;
+	font-weight: 900;
+	color: rgb(179, 1, 1); 
+}
+
+.queenHershii {
+	font-family: "Unbounded", sans-serif;
+	color: rgb(98, 1, 144); 
+}
+.queenHershiiBold {
+	font-family: "Unbounded", sans-serif;
+	font-weight: 800;
+	color: rgb(201, 0, 195); 
+}
+
+.queenGeneva {
+	font-family: "Mali", cursive;
+	font-weight: 550;
+	color: rgb(34, 82, 0); 
+}
+
+.queenGenevaBold {
+	font-family: "Mali", cursive;
+	font-weight: 700;
+	color: rgb(57, 136, 0); 
+}
+.queenGenevaCursive {
+	font-size: 1.2em;
+	font-family: "Satisfy", cursive;
+	font-weight: 400;
+	color: rgb(34, 82, 0); 
+}
+
+#line-1, #line-5, #line-13, #line-21, #line-42, #line-43 {
+	font-style: italic;
+}
+
 /* Oh, she's royal styling (line 9, 10 and 11) */
 
 #line-10.stair-effect, #line-11.stair-effect, #line-12.stair-effect,
 #line-19.serious-effect, #line-20.serious-effect {
+	position: absolute;
 	font-family: "Noto Serif Display", serif;
 	text-shadow: rgb(255, 255, 255) 3px 0 1px;
-	font-size: 2.1em;
+	font-size: 3em;
     opacity: 1;
-	position: absolute;
 }
 
 #line-19.serious-effect, #line-20.serious-effect {
-	animation-name: zoom-out;
-    animation-duration: 1.3s;
-    animation-timing-function: ease;
+	animation: zoom-out 1.3s ease;
 }
 
 #line-10.stair-effect {
-    top: 6em;
-    left: 15em;
+    top: -11em;
+    left: 8em;
 }
 
 #line-11.stair-effect {
-    top: 7em;
-    left: 15.5em;
+    top: -10em;
+    left: 8.5em;
 }
 
 #line-12.stair-effect {
-    top: 8em;
-    left: 16.5em;
+    top: -9em;
+    left: 9.5em;
 }
 
 
 #line-19.serious-effect {
-	top: 6em;
-    left: 15em;
+	top: -12em;
+    left: 8em;
 }
 
 #line-20.serious-effect {
-	top: 7em;
-    left: 16em;
+	top: -11em;
+    left: 9em;
 }
+
+
+
+/* ------------------------ */
+/* - GENEVA INTRO STYLING - */
+/* ------------------------ */
+
+#line-44.highlighted,
+#line-45.highlighted,
+#line-46.highlighted,
+#line-47.highlighted {
+	position: absolute;
+	font-family: "Satisfy", cursive;
+	font-weight: 400;
+}
+
+/* Viva Mexico... */
+#line-44.highlighted {
+    font-size: 6em;
+    top: -5em;
+    left: 7.8em;
+    background: linear-gradient(to right, rgb(20, 212, 3), rgb(235, 255, 14), rgb(253, 101, 0));
+    background-clip: text; 
+    color: transparent;
+}
+
+#line-45.highlighted {
+	font-size: 7em;
+    top: -6em;
+    left: 4em;
+	color: rgb(20, 212, 3);
+	animation: scale 1s alternate;
+}
+
+#line-46.highlighted {
+	font-size: 7em;
+    top: -5em;
+    left: 5.5em;
+	color: rgb(253, 101, 0);
+	animation: scale 2s alternate;
+}
+
+#line-47.highlighted {
+	font-size: 7em;
+    top: -5em;
+    left: 4em;
+	color: rgb(20, 212, 3);
+	animation: scale-kiss 1.2s alternate;
+}
+
+#line-55.geneva, #line-56.geneva, #line-57.geneva, #line-58.geneva, #line-59.geneva,
+#line-60.geneva {
+	position: absolute;
+} 
+
+#line-55.geneva {
+	font-size: 3em;
+	top: -11em;
+    left: 10em;
+	color: rgb(4, 50, 0);
+}
+
+#line-56.geneva {
+	font-family: "Satisfy", cursive;
+	font-size: 4em;
+	top: -8.5em;
+    left: 7em;
+	color: rgb(253, 101, 0);
+}
+#line-57.geneva {
+	font-size: 3em;
+	top: -11em;
+    left: 8em;
+	color: rgb(4, 50, 0);
+}
+
+#line-58.geneva {
+	font-family: "Satisfy", cursive;
+	font-size: 4em;
+	top: -8.5em;
+    left: 7em;
+	color: rgb(253, 101, 0);
+}
+
+#line-59.geneva {
+	font-size: 2.5em;
+	top: -13em;
+    left: 12em;
+	color: rgb(4, 50, 0);
+}
+
+#line-60.geneva {
+	font-size: 8em;
+	top: -4.4em;
+    left: 3.5em;
+	text-shadow: 0 -1rem 2rem #ffffff, 0 1rem 3rem #ffffff;
+}
+
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes scale-kiss {
+    0% {
+        transform: scale(0.5);
+    }
+	50% {
+		transform: scale(1.5);
+	}
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+
 
 
 /* ------------------------------ */
@@ -120,40 +293,82 @@ video {
     display: none;
 }
 
-/* Additional styles for the gifs */
-#pizazz-gif {
-    width: 30%;
+/* Additional styles for the gifs: PLASMA */
+
+#surprised-gif, #pizazz-gif, #twirl-gif, #exclamation-gif-1, #surprised-wide-1, #exclamation-gif-2, #stomp,
+#exclamation-gif-3, #sparkles {
 	overflow: hidden;
+	position: relative;
 }
 
 #surprised-gif {
-	width: 20%;
-	overflow: hidden;
-}
-
-#twirl-gif {
-	width: 20%;
-	overflow: hidden;
-}
-
-
-#pizazz-gif {
-	position: relative;
-	top: -27em;
-	left: 25em;
-}
-
-#surprised-gif {
-	position: relative;
-	top: -24em;
-	left: 32em;
+	width: 30%;
+	
+	top: -37em;
+	left: 27em;
 	transform: rotate(-185deg);
 }
 
+#pizazz-gif {
+    width: 30%;
+	
+	top: -40em;
+	left: 25em;
+}
+
 #twirl-gif {
-	position: relative;
-	top: -22em;
-	left: 35.5em;
+	width: 35%;
+
+	top: -35em;
+	left: 28.5em;
+}
+
+/* Hershii being surprised */
+#exclamation-gif-1 {
+	width: 40%;
+
+	top: -41em;
+	left: 25em;
+}
+/* Hershii laughing */
+#surprised-wide-1 {
+	width: 25%;
+	
+	top: -25em;
+	left: 32em;
+	transform: rotate(-255deg);
+}
+
+/* Plasma: Wider? Well I thought you said whiter, and I was like... */
+#exclamation-gif-2 {
+	width: 40%;
+
+	top: -41em;
+	left: 27em;
+}
+
+/* Geneva dramatic heel stomp! */
+#stomp {
+	width: 75%;
+
+	top: -43em;
+	left: 35em;
+}
+
+/* Plasma being surprised (again) */
+#exclamation-gif-3 {
+	width: 40%;
+
+	top: -41em;
+	left: 27em;
+
+}
+
+#sparkles {
+	width: 60%;
+
+	top: -35em;
+	left: 15em;
 }
 
 
@@ -161,14 +376,15 @@ video {
 /* Music aura */
 
 .plasma-music {
-    animation-name: animateBackground;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation: plasmaBackground 1s ease-in-out infinite;
+}
+
+.mexican-music {
+	animation: genevaBackground 1s ease-in-out infinite;
 }
 
 
-@keyframes animateBackground {
+@keyframes plasmaBackground {
     0% {
         background: linear-gradient(to right, rgb(233, 80, 223), rgb(255, 112, 112));
     }
@@ -180,11 +396,22 @@ video {
     }
 }
 
+@keyframes genevaBackground {
+    0% {
+        background: linear-gradient(to right, rgb(234, 255, 0), rgb(246, 28, 28));
+    }
+    50% {
+        background: linear-gradient(to right, rgb(246, 28, 28), rgb(16, 186, 0));
+    }
+    100% {
+        background: linear-gradient(to right, rgb(16, 186, 0), rgb(234, 255, 0));
+    }
+}
+
+
 
 .changed {
-	animation-name: dramatic-change;
-    animation-duration: 3s;
-    animation-timing-function: ease;
+	animation: dramatic-change 3s ease;
 }
 
 @keyframes dramatic-change {

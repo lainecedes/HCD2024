@@ -11,6 +11,7 @@ function addClassesToCaptions() {
     var video = document.getElementById('video');
     var stairEffectRemoved = false;
     var seriousEffectRemoved = false;
+    var genevaEffectRemoved = false;
 
     video.addEventListener('timeupdate', function() {
         var currentTime = video.currentTime;
@@ -71,6 +72,33 @@ function addClassesToCaptions() {
         }
 
 
+        // Geneva, effects.
+        if (highlightIndex === 54 || highlightIndex === 60) {
+            document.getElementById('line-55').classList.add('geneva');
+            document.getElementById('line-56').classList.add('geneva');
+            document.getElementById('line-57').classList.add('geneva');
+            document.getElementById('line-58').classList.add('geneva');
+            document.getElementById('line-59').classList.add('geneva');
+            document.getElementById('line-60').classList.add('geneva');
+
+            // reset
+            genevaEffectRemoved = false;
+        } 
+        // Remove 'geneva' class for lines 55, 56, 57, 58, 59, 60 if line 60 is playing
+        if (highlightIndex === 61 && !genevaEffectRemoved) {
+            document.getElementById('line-55').classList.remove('geneva');
+            document.getElementById('line-56').classList.remove('geneva');
+            document.getElementById('line-57').classList.remove('geneva');
+            document.getElementById('line-58').classList.remove('geneva');
+            document.getElementById('line-59').classList.remove('geneva');
+            document.getElementById('line-60').classList.remove('geneva');
+
+            // reset
+            genevaEffectRemoved = true;
+        }
+        
+
+
         // gif visibility
         // Pizazz effect with royal text
          var pizazzGif = document.getElementById('pizazz-gif');
@@ -82,7 +110,35 @@ function addClassesToCaptions() {
 
         // Twirl gif for Plasma introduction
         var twirlGif = document.getElementById('twirl-gif');
-        twirlGif.classList.toggle('hidden', !(currentTime >= 27.9 && currentTime < 28.95));
+        twirlGif.classList.toggle('hidden', !(currentTime >= 27.9 && currentTime < 28.85));
+
+        // Hershii being surprised at the beginning
+        var hershiiSurprised = document.getElementById('exclamation-gif-1');
+        hershiiSurprised.classList.toggle('hidden', !(currentTime >= 2.5 && currentTime < 3.06));
+
+        // Hershii being surprised at the beginning
+        var hershiiLaughing = document.getElementById('surprised-wide-1');
+        hershiiLaughing.classList.toggle('hidden', !(currentTime >= 66.35 && currentTime < 67.10));
+
+        // Plasma being surprised
+        var plasmaSurprised = document.getElementById('exclamation-gif-2');
+        plasmaSurprised.classList.toggle('hidden', !(currentTime >= 76.5 && currentTime < 77));
+
+        // Geneva heel stomp
+        var genevaHeel = document.getElementById('stomp');
+        genevaHeel.classList.toggle('hidden', !(currentTime >= 82.3 && currentTime < 82.8));
+
+         // Plasma being surprised again
+         var plasmaSurprisedAgain = document.getElementById('exclamation-gif-3');
+         plasmaSurprisedAgain.classList.toggle('hidden', !(currentTime >= 83.8 && currentTime < 84.3));
+
+         // Geneva sparkles
+         var genevaSparkle = document.getElementById('sparkles');
+         genevaSparkle.classList.toggle('hidden', !(currentTime >= 94.8 && currentTime < 96.1));
+
+
+
+
 
 
 
@@ -93,6 +149,9 @@ function addClassesToCaptions() {
 
         // Bitch, the game changed aura
         document.documentElement.classList.toggle('changed', (currentTime >= 37 && currentTime < 40.2));
-    });
 
+        // Mexican Music
+        document.documentElement.classList.toggle('mexican-music', (currentTime >= 82.3 && currentTime < 93.5));
+
+    });
 }

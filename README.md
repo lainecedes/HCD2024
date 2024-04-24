@@ -56,6 +56,10 @@ Wat ik heb meegekregen van een aantal notities in mijn groepje is dat:
 - Visuele typografische effecten proberen toe te voegen bij de closed captioning: Kleuren en filters bijvoorbeeld
 - Effects in video of erbuiten, geluid die dus misschien binnenkomt laten zien van de buitenkant of geluid die wegvalt ook weg laten "vallen" uit het beeld en in het kader
 
+## 1e Gesprek
+Eric
+Ik was er niet in de ochtend woensdag, dus eerste ideeen bespreken
+
 
 
 ## Week 2: presenting RuPaul's Drag Race concept visualized
@@ -64,6 +68,14 @@ Ik had mijn idee laten zien...
 Feedback:
 Leuke idee en hieruit kan je veel emoties en persoonlijkheid tonen met de verschillende drag queens. De effecten met de voetstappen is een goed idee om dat te laten zien. Ook kan ik bijvoorbeeld de context van de gesprekken en bepaalde woorden laten zien, bij Rupaul's Drag Race heb je verschillende clips waarin ze een drag show
 Ze is benieuwd of ik veel overdreven effecten zoals in stripboeken en anime strips kan toevoegen in de vorm van animaties (visual cues, "onomatopoeia")
+
+## 2e Gesprek
+Tamara
+Ik was niet op tijd om een stukje van mijn idee te laten zien, dus heb ik een schets laten zien en uitgebeeld wat ik wilde maken
+
+## 3e Gesprek
+Vasilis
+
 
 ### Eerste ontwerpen
 Ik heb HappyScribe gebruikt om de spraak in captions te veranderen en er zijn wel wat lange zinnen uit gekomen. Ik heb de keuze gemaakt om deze zinnen zo kort mogelijk te houden zodat ik de visual cues and sound effects het beste kan laten zien. Een voorbeeld ervan:
@@ -119,6 +131,14 @@ Ik had vooraf ook een vraag aan haar gesteld:
 Dit heb ik gedaan omdat ik wilde testen met het uitgebreid beschrijven van het geluid wat er afspeelt, sinds ze een week geleden had aangekaart dat sommige beschrijvingen van geluid heel saai zijn of veelal wat informatie miste.
  
 Ze was er tevreden mee zei dat het duidelijk genoeg was. Ik was blij om te zien dat ze het zo tof vond!
+
+## 4e Gesprek
+Eric
+Wat wil ik later testen?
+Focussen op de verschillende personages en de effecten
+UI dingen fixen en kijken
+Denk over die 4 punten en hoe die heeft aangesloten op je ontwerp
+
 
 ## Week 4 
 
