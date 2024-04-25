@@ -16,7 +16,7 @@ p {
 	opacity: 0;
 	color:black;
 	position: absolute;
-	top: 75%;
+	top: -0.8em;
     left: 50%;
     transform: translate(-50%, -50%);
 	text-align: center;
@@ -153,14 +153,48 @@ video {
 }
 
 
+/* Bubble style test */
+
+#line-10.stair-effect::before,
+#line-11.stair-effect::before,
+#line-12.stair-effect::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 3em; 
+    padding: 10px; 
+    z-index: -1; 
+    width: 4em;
+    height: 3em;
+	opacity: 0.3;
+	transition: opacity 1.5s ease;
+}
+
+#line-10.stair-effect::before {
+    top: -1em;
+    left: -0.4em;
+}
+
+#line-11.stair-effect::before {
+    top: -1em; 
+    left: -0.8em;
+}
+
+#line-12.stair-effect::before {
+    top: -1.2em; 
+    left: -1em; 
+}
+
+
+/* Bitch, the game changed */
 #line-19.serious-effect {
-	top: -12em;
+	top: -10em;
     left: 8em;
 }
 
 #line-20.serious-effect {
-	top: -11em;
-    left: 9em;
+	top: -9em;
+    left: 10em;
 }
 
 
@@ -295,8 +329,9 @@ video {
 
 /* Additional styles for the gifs: PLASMA */
 
+/* Add the id here if the gif doesn't show up */
 #surprised-gif, #pizazz-gif, #twirl-gif, #exclamation-gif-1, #surprised-wide-1, #exclamation-gif-2, #stomp,
-#exclamation-gif-3, #sparkles {
+#exclamation-gif-3, #sparkles, #sparkles-2 {
 	overflow: hidden;
 	position: relative;
 }
@@ -371,6 +406,12 @@ video {
 	left: 15em;
 }
 
+#sparkles-2 {
+	width: 60%;
+
+	top: -35em;
+	left: 15em;
+}
 
 
 /* Music aura */
@@ -457,3 +498,41 @@ video {
 		font-weight: 100;
 	}
 }
+
+#line-35 {
+	position: relative;
+	left: 19em;
+}
+
+#shake {
+	animation: tilt 0.15s infinite;
+	position: absolute;
+	left: 22em;
+	top: -0.2em;
+	font-size: 1.5em;
+}
+#end {
+	position: absolute;
+	left: 40.6em;
+
+}
+
+/* SPANS ADDITIONAL STYLING */
+
+@keyframes tilt {
+	0% { 
+		transform: rotate(0deg); 
+	}
+	25% { 
+		transform: rotate(5deg); 
+	}
+	50% { 
+		transform: rotate(0deg); 
+	}
+	75% { 
+		transform: rotate(-5deg); 
+	}
+	100% { 
+		transform: rotate(0deg); 
+	}
+  }

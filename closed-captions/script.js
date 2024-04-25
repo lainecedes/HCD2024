@@ -96,6 +96,7 @@ function addClassesToCaptions() {
             // reset
             genevaEffectRemoved = true;
         }
+
         
 
 
@@ -135,6 +136,10 @@ function addClassesToCaptions() {
          // Geneva sparkles
          var genevaSparkle = document.getElementById('sparkles');
          genevaSparkle.classList.toggle('hidden', !(currentTime >= 94.8 && currentTime < 96.1));
+
+         // Hugging sparkles
+         var hugSparkles = document.getElementById('sparkles-2');
+        hugSparkles.classList.toggle('hidden', !(currentTime >= 40.5 && currentTime < 42.5));
 
 
 
