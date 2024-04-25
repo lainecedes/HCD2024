@@ -1,5 +1,6 @@
 # Creative Captioning, Bitch!
-Dit is een repo voor de individuele opdracht voor het vak Human Centered Design.
+
+![captioning-screenshot](https://github.com/lainecedes/HCD2024/assets/65594330/e0d2b524-8677-4c77-a0a3-61799cc6cca7)
 
 ## The assignment
 **⭐️ Marie van Driessche ⭐️** 
@@ -121,7 +122,8 @@ Ik had mijn concept aan Marie getest en ze vond het echt tof om te zien. Ze vond
  - Het contrast van sommige woorden fixen
  - Video wat groter maken voor beter zicht
 
-(contrast foto hier!)
+<img width="1000" alt="Screenshot 2024-04-25 at 12 47 10" src="https://github.com/lainecedes/HCD2024/assets/65594330/5214754e-b85b-4308-a3a1-5c7fc70c768c">
+
 
 Ik had vooraf ook een vraag aan haar gesteld:
  - 1. Is de beschrijving van de achtergrond geluiden duidelijk genoeg?
@@ -146,12 +148,14 @@ In de vierde week heb ik even weer gekeken naar wat ik meer leuke dingen kan toe
 Ik heb de beslissing genomen om leuke en grappige lange zinnen op te breken in losse woorden om zo leuke typografische effecten toe te voegen.
 Een voorbeeld hiervan die ik al had was Plasma's 'Oooooh, she's royal' zin, maar ook Geneva's intro: 'Viva Mexico.. Ca.. Brones!'
 
-(geneva's intro foto)
+<img width="1000" alt="Screenshot 2024-04-25 at 12 48 49" src="https://github.com/lainecedes/HCD2024/assets/65594330/7948dbce-33a8-43e4-86b7-15caedea5740">
+
 
 ### De derde test
 Ik heb mijn bevindingen verwerkt en aan haar gepresenteerd voor het testen. Ook heb ik de caption font wat groter gemaakt omdat dat te klein was, de video groter gemaakt, en het contrast gefixt met Plasma's Oh she's royal lijn door een speech bubble eronder te leggen zodat het beter te lezen is. Ik heb bewust niet gekozen voor andere kleuren, omdat de show achtergrond zo kleurrijk is dat het contrast sowieso al slecht is en bijna alle kleuren erin kunnen 'verdwijnen'.
 
-(contrast fix)
+<img width="1038" alt="Screenshot 2024-04-25 at 12 45 39" src="https://github.com/lainecedes/HCD2024/assets/65594330/00badb10-67d5-4928-aead-3e0b210f3983">
+
 
 **Wat vond Marie belangrijk en leuk?**
 - De coole effecten, animaties en lightshow zoals altijd :D
@@ -168,6 +172,9 @@ Als test had ik voor het onderscheiden van de verschillende drag queens, aanduid
 		<span class="queenHershii" id="end">surreal.</span>
 	</p>
 ```
+
+<img width="1000" alt="Screenshot 2024-04-25 at 12 48 19" src="https://github.com/lainecedes/HCD2024/assets/65594330/f4d2b0da-fbef-4ee7-baea-783360ed95de">
+
 Dus als voorbeeld: Als Plasma en Hershii enthousiast met elkaar praten, hebben ze elk 2 kleuren in hun caption line. Dit ziet Marie dus als 4 kleuren, en dan 4 personen, en vraagt ze dan zich af wie dat zeggen.
 
 Ze vond dit wel apart, want zij ziet dit namelijk als 2 verschillende personen mede dankzij de 2 verschillende kleuren die er zijn. Ik vond dit interessant om te zien en hoe gewoon een beetje verschil met kleuren de context al kan verdraaien voor haar. Dus heb ik als eindresultaat dat ik de default font aan houd, want hierin ziet ze (en ik!) toch duidelijk wie wie is op basis van de font alleen. 
