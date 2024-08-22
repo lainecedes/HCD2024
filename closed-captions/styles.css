@@ -7,20 +7,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&family=Unbounded:wght@722&display=swap');
 #closed-captions {
 	position: relative;
-	top: 1em;
+	top: 2.5vh; /* Use vh to position relative to the viewport height */
+	width: 100%; /* Make sure the captions take the full width */
 }
 
+#closed-captions {
+	position: absolute;
+   	top: 36em;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Ensure GIFs are on top of the video */
+    pointer-events: none; /* Prevent GIFs from interfering with video controls */
+}
 
 p {
-	font-size: 1.7em;
+	font-size: 1.8em;
 	opacity: 0;
 	color:black;
 	position: absolute;
-	top: -0.8em;
+	top: -1.75vh;
     left: 50%;
     transform: translate(-50%, -50%);
 	text-align: center;
 	color: rgb(70, 0, 103); 
+	width: 100%;
 }
 
 .highlighted {
@@ -35,8 +46,14 @@ html {
 }
 
 body {
-	height: 100vh;
+	height: 100%;
 	margin: 0 auto;
+
+	display: flex;
+    justify-content: center;
+	flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 h1 {
@@ -45,12 +62,18 @@ h1 {
 	font-family: "Noto Serif Display", serif;
 	font-weight: 900;
 	color: rgb(70, 0, 103); 
+	margin-top: 1em;
 }
 
 .container {
 	display: flex;
     justify-content: center;
     align-items: center;
+
+	position: relative;
+    width: 100%;
+    max-width: 1000px; /* Optional max width */
+    aspect-ratio: 16/9;
 }
 
 .highlighted {
@@ -68,9 +91,14 @@ h1 {
 }
 
 video {
-	width: 73em; 
-	height: 100%;
+	/* width: 50em; 
+	height: 100%; */
+
+	width: 58em;
+	height: auto;
 	margin: 0 auto;
+	display: block;
+    z-index: 1;
 }
 
 #closed-captions .serious-effect {
@@ -138,18 +166,18 @@ video {
 }
 
 #line-10.stair-effect {
-    top: -11em;
-    left: 8em;
+	top: -80%;
+    left: 20%;
 }
 
 #line-11.stair-effect {
-    top: -10em;
-    left: 8.5em;
+	top: -72%;
+    left: 25%;
 }
 
 #line-12.stair-effect {
-    top: -9em;
-    left: 9.5em;
+    top: -64%;
+    left: 30%;
 }
 
 
@@ -165,36 +193,36 @@ video {
     padding: 10px; 
     z-index: -1; 
     width: 4em;
-    height: 3em;
+    height: 2em;
 	opacity: 0.3;
 	transition: opacity 1.5s ease;
 }
 
 #line-10.stair-effect::before {
-    top: -1em;
-    left: -0.4em;
+    top: -35%;
+    left: 38%;
 }
 
 #line-11.stair-effect::before {
-    top: -1em; 
-    left: -0.8em;
+    top: -40%;
+    left: 40%;
 }
 
 #line-12.stair-effect::before {
-    top: -1.2em; 
-    left: -1em; 
+    top: -44%;
+    left: 38%;
 }
 
 
 /* Bitch, the game changed */
 #line-19.serious-effect {
-	top: -10em;
-    left: 8em;
+	top: -75%;
+    left: 20%;
 }
 
 #line-20.serious-effect {
-	top: -9em;
-    left: 10em;
+	top: -66%;
+    left: 30%;
 }
 
 
@@ -215,8 +243,8 @@ video {
 /* Viva Mexico... */
 #line-44.highlighted {
     font-size: 6em;
-    top: -5em;
-    left: 7.8em;
+    top: -65%;
+    left: 50%;
     background: linear-gradient(to right, rgb(20, 212, 3), rgb(235, 255, 14), rgb(253, 101, 0));
     background-clip: text; 
     color: transparent;
@@ -224,24 +252,24 @@ video {
 
 #line-45.highlighted {
 	font-size: 7em;
-    top: -6em;
-    left: 4em;
+    top: -75%;
+	left: 0;
 	color: rgb(20, 212, 3);
 	animation: scale 1s alternate;
 }
 
 #line-46.highlighted {
 	font-size: 7em;
-    top: -5em;
-    left: 5.5em;
+    top: -70%;
+    left: 5%;
 	color: rgb(253, 101, 0);
 	animation: scale 2s alternate;
 }
 
 #line-47.highlighted {
 	font-size: 7em;
-    top: -5em;
-    left: 4em;
+    top: -75%;
+    left: 0%;
 	color: rgb(20, 212, 3);
 	animation: scale-kiss 1.2s alternate;
 }
@@ -253,44 +281,44 @@ video {
 
 #line-55.geneva {
 	font-size: 3em;
-	top: -11em;
-    left: 10em;
+	top: -80%;
+    left: 30%;
 	color: rgb(4, 50, 0);
 }
 
 #line-56.geneva {
 	font-family: "Satisfy", cursive;
 	font-size: 4em;
-	top: -8.5em;
-    left: 7em;
+	top: -85%;
+    left: 25%;
 	color: rgb(253, 101, 0);
 }
 #line-57.geneva {
 	font-size: 3em;
-	top: -11em;
-    left: 8em;
+	top: -85%;
+    left: 25%;
 	color: rgb(4, 50, 0);
 }
 
 #line-58.geneva {
 	font-family: "Satisfy", cursive;
 	font-size: 4em;
-	top: -8.5em;
-    left: 7em;
+	top: -85%;
+    left: 25%;
 	color: rgb(253, 101, 0);
 }
 
 #line-59.geneva {
 	font-size: 2.5em;
-	top: -13em;
-    left: 12em;
+	top: -50%;
+    left: 35%;
 	color: rgb(4, 50, 0);
 }
 
 #line-60.geneva {
-	font-size: 8em;
-	top: -4.4em;
-    left: 3.5em;
+	font-size: 10em;
+	top: -90%;
+    left: 25%;
 	text-shadow: 0 -1rem 2rem #ffffff, 0 1rem 3rem #ffffff;
 }
 
@@ -327,6 +355,25 @@ video {
     display: none;
 }
 
+.show {
+    opacity: 1;
+    display: block; /* Ensure shown GIFs occupy space */
+}
+
+.gifs {
+	position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Ensure GIFs are on top of the video */
+    pointer-events: none; /* Prevent GIFs from interfering with video controls */
+}
+
+.gifs img {
+    position: absolute;
+}
+
 /* Additional styles for the gifs: PLASMA */
 
 /* Add the id here if the gif doesn't show up */
@@ -337,40 +384,40 @@ video {
 }
 
 #surprised-gif {
-	width: 30%;
-	
-	top: -37em;
-	left: 27em;
+	top: 15%;
+    left: 28%;
+    width: 35%;
+
 	transform: rotate(-185deg);
 }
 
 #pizazz-gif {
-    width: 30%;
-	
-	top: -40em;
-	left: 25em;
+
+	top: 0;
+    left: 40%;
+    width: 35%;
+    transform: translateX(-50%);
 }
 
 #twirl-gif {
-	width: 35%;
+	width: 50%;
 
-	top: -35em;
-	left: 28.5em;
+	top: 15%;
+	left: 26%;
 }
 
 /* Hershii being surprised */
 #exclamation-gif-1 {
-	width: 40%;
-
-	top: -41em;
-	left: 25em;
+	top: 0;
+    left: 30%;
+    width: 35%;
 }
 /* Hershii laughing */
 #surprised-wide-1 {
 	width: 25%;
 	
-	top: -25em;
-	left: 32em;
+	top: 20%;
+	left: 35%;
 	transform: rotate(-255deg);
 }
 
@@ -378,39 +425,39 @@ video {
 #exclamation-gif-2 {
 	width: 40%;
 
-	top: -41em;
-	left: 27em;
+	top: 10%;
+	left: 30%;
 }
 
 /* Geneva dramatic heel stomp! */
 #stomp {
 	width: 75%;
 
-	top: -43em;
-	left: 35em;
+	top: 7%;
+	left: 43%;
 }
 
 /* Plasma being surprised (again) */
 #exclamation-gif-3 {
 	width: 40%;
 
-	top: -41em;
-	left: 27em;
+	top: 10%;
+	left: 27%;
 
 }
 
 #sparkles {
 	width: 60%;
 
-	top: -35em;
-	left: 15em;
+	top: 15%;
+	left: 15%;
 }
 
 #sparkles-2 {
 	width: 60%;
 
-	top: -35em;
-	left: 15em;
+	top: 10%;
+	left: 15%;
 }
 
 
@@ -499,27 +546,10 @@ video {
 	}
 }
 
-#line-35 {
-	position: relative;
-	left: 19em;
-}
-
-#shake {
-	animation: tilt 0.15s infinite;
-	position: absolute;
-	left: 22em;
-	top: -0.2em;
-	font-size: 1.5em;
-}
-#end {
-	position: absolute;
-	left: 40.6em;
-
-}
 
 /* SPANS ADDITIONAL STYLING */
 
-@keyframes tilt {
+@keyframes tilting {
 	0% { 
 		transform: rotate(0deg); 
 	}
@@ -536,3 +566,23 @@ video {
 		transform: rotate(0deg); 
 	}
   }
+
+#line-35 {
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+	top: 0.2em;
+}
+
+#shake {
+	animation: tilting 0.15s infinite;
+	
+	top: -0.2em;
+	font-size: 1.5em;
+}
+#end {
+	position: relative;
+
+}
