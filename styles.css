@@ -4,10 +4,7 @@
 /* Satisfy */
 /* Unbounded */
 
-/* NOTE: Works and tested with Firefox, Safari and Chrome.  ----*/
-/* Arc gives responsiveness issues, so please view this in one -*/
-/* of these 3 browsers first mentioned. ------------------------*/
-
+/* NOTE: Works and tested with Arc, Firefox, Safari and Chrome. */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&family=Unbounded:wght@722&display=swap');
@@ -636,7 +633,7 @@ video {
 
 @media (min-width: 1300px) {
 	video {
-        width: clamp(46vw, 72vw, 85em);
+        width: clamp(46vw, 72vw, 90em);
     }
 
 	#closed-captions {
@@ -644,6 +641,17 @@ video {
 		font-size: 1em;
 	}
 
+}
+
+@media (min-width: 1500px) {
+
+	h1 {
+		padding-bottom: 3em;
+	}
+	#closed-captions {
+		top: clamp(127%, 125%, 130%);
+		font-size: 1.3em;
+	}
 }
 
 
